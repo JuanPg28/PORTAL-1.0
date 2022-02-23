@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#jpenya_body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.jpenya_contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.jpenya_fondo_pag {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/jpenya_fondo.png);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.jpenya_header_nav {
+    width: 100%;
+}
+
+.jpenya_header_nav .jpenya_contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.jpenya_header_nav #jpenya_h1{
+    color: #fff;
+    font-family: 'Bangers', cursive;
+    font-size: 40px;
+    padding-top: 10px;
+    letter-spacing: 5px
+}
+
+.jpenya_header_nav #jpenya_nav .jpenya_a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+.jpenya_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.jpenya_info_titulo #jpenya_h2 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.jpenya_info_titulo .jpenya_preguntar {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    background: #1A2849;
+    padding: 20px;
+    padding-left: 20px;
+}
+
+.jpenya_contenedor_img {
+    animation: movimiento 2.5s linear infinite;
+}
+
+.jpenya_contenedor_img #jpenya_img {
+    width: 400px;
+    display: block;
+}
+
+@keyframes movimiento {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
